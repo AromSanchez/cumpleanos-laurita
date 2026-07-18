@@ -7,7 +7,6 @@ import * as THREE from "three";
 
 const MESSAGES = [
   "",
-  "Tienes una sonrisa hermosa",
   "Tus ojitos son preciosos",
   "Gracias por existir",
   "Admiro mucho lo empática que eres",
