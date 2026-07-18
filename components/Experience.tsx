@@ -5,6 +5,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { EffectComposer, Bloom, Vignette, ChromaticAberration } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
+import { Vector2 } from "three";
 
 import StarField from "@/components/StarField";
 import BlackHole from "@/components/BlackHole";
@@ -60,7 +61,9 @@ export default function Experience() {
         />
         <ChromaticAberration
           blendFunction={BlendFunction.NORMAL}
-          offset={[0.0006, 0.0006]}
+          offset={new Vector2(0.0006, 0.0006)}
+          radialModulation={false}
+          modulationOffset={0}
         />
         <Vignette eskil={false} offset={0.15} darkness={0.95} />
       </EffectComposer>
