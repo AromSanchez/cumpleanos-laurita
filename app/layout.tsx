@@ -16,11 +16,6 @@ const body = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Para ti - Un universo de gratitud",
-  description: "Una dedicatoria emocional convertida en universo interactivo.",
-};
-
 export default function RootLayout({
   children,
 }: {
